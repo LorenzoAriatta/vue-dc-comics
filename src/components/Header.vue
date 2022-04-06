@@ -30,7 +30,7 @@ header {
   background-color: white;
 }
 .head-container {
-  width: 80%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -48,7 +48,7 @@ export default {
   background-color: #0282f9;
 }
 .top-footer-container {
-  width: 80%;
+  width: 70%;
   display: flex;
   justify-content: space-around;
   align-items: center;

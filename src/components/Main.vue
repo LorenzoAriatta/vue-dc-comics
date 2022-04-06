@@ -19,7 +19,7 @@ main {
   background-color: #1c1c1c;
 }
 .main-container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   text-align: left;
   line-height: 150px;
