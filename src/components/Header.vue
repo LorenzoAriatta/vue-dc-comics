@@ -3,16 +3,16 @@
     <div class="head-container">
       <img src="../assets/dc-logo.png" alt="DC-Logo" />
       <ul>
-        <li>CHARACTERS</li>
-        <li>COMICS</li>
-        <li>MOVIES</li>
-        <li>TV</li>
-        <li>GAMES</li>
-        <li>COLLECTIBLES</li>
-        <li>VIDEOS</li>
-        <li>FANS</li>
-        <li>NEWS</li>
-        <li>SHOP</li>
+        <li><a href="#">CHARACTERS</a></li>
+        <li><a href="#">COMICS</a></li>
+        <li><a href="#">MOVIES</a></li>
+        <li><a href="#">TV</a></li>
+        <li><a href="#">GAMES</a></li>
+        <li><a href="#">COLLECTIBLES</a></li>
+        <li><a href="#">VIDEOS</a></li>
+        <li><a href="#">FANS</a></li>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">SHOP</a></li>
       </ul>
     </div>
   </header>
@@ -41,7 +41,18 @@ header {
     display: inline;
     margin: 1em;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
+    padding-bottom: 49px;
+    &:hover {
+      border-bottom: 4px solid #0282f9;
+    }
+    a {
+      text-decoration: none;
+      color: #464646;
+    }
   }
+}
+li:hover a {
+  color: #0282f9;
 }
 </style>

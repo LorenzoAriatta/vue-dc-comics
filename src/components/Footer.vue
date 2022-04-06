@@ -1,5 +1,6 @@
 <template>
   <footer>
+    <!-- inizio Footer -->
     <div class="container">
       <div class="info">
         <div class="list">
@@ -99,29 +100,42 @@
       </div>
       <div class="logo-bg"></div>
     </div>
+    <!-- / Footer -->
+    <!-- inizio bot Footer -->
     <div id="bot-footer">
       <div class="container-bot">
         <button>SIGN-UP NOW!</button>
         <div class="social">
           <h3>FOLLOW US</h3>
           <div class="icon-social">
-            <img src="../assets/footer-facebook.png" alt="Facebook" />
+            <a href="#">
+              <img src="../assets/footer-facebook.png" alt="Facebook"
+            /></a>
           </div>
           <div class="icon-social">
-            <img src="../assets/footer-twitter.png" alt="twitter" />
+            <a href="#">
+              <img src="../assets/footer-twitter.png" alt="twitter"
+            /></a>
           </div>
           <div class="icon-social">
-            <img src="../assets/footer-youtube.png" alt="youtube" />
+            <a href="#">
+              <img src="../assets/footer-youtube.png" alt="youtube"
+            /></a>
           </div>
           <div class="icon-social">
-            <img src="../assets/footer-pinterest.png" alt="pinterest" />
+            <a href="#">
+              <img src="../assets/footer-pinterest.png" alt="pinterest"
+            /></a>
           </div>
           <div class="icon-social">
-            <img src="../assets/footer-periscope.png" alt="periscope" />
+            <a href="#">
+              <img src="../assets/footer-periscope.png" alt="periscope"
+            /></a>
           </div>
         </div>
       </div>
     </div>
+    <!-- / bot Footer -->
   </footer>
 </template>
 
@@ -160,6 +174,9 @@ footer {
       text-decoration: none;
       color: #959595;
       font-size: 12px;
+      &:hover {
+        color: #0282f9;
+      }
     }
   }
 }
@@ -180,6 +197,13 @@ footer {
     h3 {
       color: #0282f9;
     }
+    .icon-social {
+      text-decoration: none;
+      &:hover {
+        transition: 0.5s;
+        transform: scale(1.2);
+      }
+    }
   }
 }
 .container-bot {
@@ -195,5 +219,10 @@ button {
   color: white;
   font-size: 16px;
   font-weight: bold;
+  &:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 25px 5px #0282f9;
+    border-radius: 25px;
+  }
 }
 </style>
