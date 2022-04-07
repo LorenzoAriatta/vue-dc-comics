@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="cards">
     <img :src="imgPath" alt="coverComics" />
     <h5>{{ series }}</h5>
   </div>
@@ -9,6 +9,7 @@
 export default {
   name: "CardComics",
   props: {
+    comic: Object,
     imgPath: String,
     series: String,
   },
@@ -16,4 +17,7 @@ export default {
 </script>
 
 <style>
+.cards {
+  width: 100%;
+}
 </style>
