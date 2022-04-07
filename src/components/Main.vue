@@ -1,6 +1,8 @@
 <template>
   <main>
+    <div class="jumbo"></div>
     <div class="main-container">
+      <div class="flydiv"><h2>CURRENT SERIES</h2></div>
       <CardComics
         v-for="(item, index) in Comics"
         :key="'prod-' + index"
@@ -29,7 +31,7 @@ console.log(CardComics);
 
 <style scoped lang="scss">
 main {
-  background-color: black;
+  background-color: #1c1c1c;
   display: flex;
   flex-direction: column;
 }
@@ -42,6 +44,22 @@ main {
   column-gap: 2%;
   row-gap: 50px;
   padding: 50px 0px;
+  position: relative;
+}
+.jumbo {
+  width: 100%;
+  height: 40vh;
+  background-image: url(../assets/jumbotron.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.flydiv {
+  position: absolute;
+  top: -4%;
+  left: 0%;
+  background-color: #0282f9;
+  padding: 10px 30px;
+  color: white;
 }
 button {
   margin: 30px 0px;
@@ -55,7 +73,7 @@ button {
   &:hover {
     transition: 0.5s;
     box-shadow: 0px 0px 25px 5px #0282f9;
-    background-color: #303030;
+    background-color: #1c1c1c;
     border-radius: 25px;
   }
 }

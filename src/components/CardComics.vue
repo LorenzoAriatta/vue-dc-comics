@@ -32,6 +32,11 @@ article {
     height: 100%;
     object-fit: cover;
     object-position: top;
+    &:hover {
+      transition: ease-in 0.4s;
+      filter: contrast(70%);
+      transform: translateY(-10px);
+    }
   }
 }
 </style>
