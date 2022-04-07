@@ -8,6 +8,7 @@
         :series="item.series"
       />
     </div>
+    <button>LOAD MORE</button>
   </main>
 </template>
 
@@ -29,14 +30,33 @@ console.log(CardComics);
 <style scoped lang="scss">
 main {
   background-color: black;
+  display: flex;
+  flex-direction: column;
 }
 .main-container {
   width: 70%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   column-gap: 2%;
   row-gap: 50px;
   padding: 50px 0px;
+}
+button {
+  margin: 30px 0px;
+  width: 200px;
+  padding: 10px;
+  color: white;
+  background-color: #0282f9;
+  border: 0;
+  font-weight: bold;
+  align-self: center;
+  &:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 25px 5px #0282f9;
+    background-color: #303030;
+    border-radius: 25px;
+  }
 }
 </style>

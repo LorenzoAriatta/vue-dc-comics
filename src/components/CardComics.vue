@@ -21,8 +21,6 @@ export default {
 <style lang="scss">
 article {
   color: white;
-  display: flex;
-  flex-wrap: wrap;
   width: calc(100% / 6) - 2%;
   height: 230px;
 }
