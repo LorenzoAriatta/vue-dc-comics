@@ -29,14 +29,14 @@ console.log(CardComics);
 <style scoped lang="scss">
 main {
   background-color: black;
-  color: white;
-  background-color: #1c1c1c;
 }
 .main-container {
   width: 70%;
   margin: 0 auto;
-  text-align: left;
-  line-height: 150px;
-  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2%;
+  row-gap: 50px;
+  padding: 50px 0px;
 }
 </style>

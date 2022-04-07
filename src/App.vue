@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <Main />
+    <Main :Comics="Comics" />
     <TopFooter />
     <Footer />
   </div>
